@@ -1,42 +1,91 @@
-<!DOCTYPE html>
-<html lang="">
-  <head>
+<template>
+    <div>
+        
 
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Aments - Car Accessories Shop HTML Template</title>
-
-    <!-- ::::::::::::::Favicon icon::::::::::::::-->
-    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/png">
-
-    <!-- ::::::::::::::All CSS Files here :::::::::::::: -->
-    <!-- Vendor CSS -->
-    <link rel="stylesheet" href="assets/css/vendor/font-awesome.min.css">
-    <link rel="stylesheet" href="assets/css/vendor/plaza-icon.css">
-    <link rel="stylesheet" href="assets/css/vendor/jquery-ui.min.css">
-
-    <!-- Plugin CSS -->
-    <link rel="stylesheet" href="assets/css/plugins/slick.css">
-    <link rel="stylesheet" href="assets/css/plugins/animate.min.css">
-    <link rel="stylesheet" href="assets/css/plugins/nice-select.css">
-    <link rel="stylesheet" href="assets/css/plugins/venobox.min.css">
-
-    <!-- Main CSS -->
-    <link rel="stylesheet" href="assets/css/style.css">
-
-    <!-- Use the minified version files listed below for better performance and remove the files listed above -->
-    <!-- <link rel="stylesheet" href="assets/css/vendor/vendor.min.css">
-    <link rel="stylesheet" href="assets/css/plugins/plugins.min.css">
-    <link rel="stylesheet" href="assets/css/style.min.css"> -->
-  </head>
-  <body>
-    <noscript>
-      <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
-    </noscript>
-    <div id="app"></div>
-    <!-- built files will be auto injected -->
-
-
+        <!-- ...:::: Start Footer Section:::... -->
+    <footer class="footer-section section-top-gap-100">
+        <!-- Start Footer Top Area -->
+        <div class="footer-top section-inner-bg">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-3 col-sm-5">
+                        <div class="footer-widget footer-widget-contact">
+                            <div class="footer-logo">
+                                <a href="index.html"><img src="assets/images/logo/logo.png" alt="" class="img-fluid"></a>
+                            </div>
+                            <div class="footer-contact">
+                                <p>We are a team of designers and developers that create high quality Magento, Prestashop, Opencart...</p>
+                                <div class="customer-support">
+                                    <div class="customer-support-icon">
+                                        <img src="assets/images/icon/support-icon.png" alt="">
+                                    </div>
+                                    <div class="customer-support-text">
+                                        <span>Customer Support</span>
+                                        <a class="customer-support-text-phone" href="tel:(08)123456789">(08) 123 456 789</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 col-md-5 col-sm-7">
+                        <div class="footer-widget footer-widget-subscribe">
+                            <h3 class="footer-widget-title">Subscribe newsletter to get updated</h3>
+                            <form action="#" method="post">
+                                <div class="footer-subscribe-box default-search-style d-flex">
+                                    <input class="default-search-style-input-box border-around border-right-none subscribe-form" type="email" placeholder="Search entire store here ..." required>
+                                    <button class="default-search-style-input-btn" type="submit">Subscribe</button>
+                                </div>
+                            </form>
+                            <p class="footer-widget-subscribe-note">We’ll never share your email address <br> with a third-party.</p>
+                            <ul class="footer-social">
+                                <li><a href="" class="facebook"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="" class="twitter"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="" class="youtube"><i class="fa fa-youtube"></i></a></li>
+                                <li><a href="" class="pinterest"><i class="fa fa-pinterest"></i></a></li>
+                                <li><a href="" class="instagram"><i class="fa fa-instagram"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6">
+                        <div class="footer-widget footer-widget-menu">
+                            <h3 class="footer-widget-title">Information</h3>
+                            <div class="footer-menu">
+                                <ul class="footer-menu-nav">
+                                    <li><a href="">Delivery</a></li>
+                                    <li><a href="about-us.html">About Us</a></li>
+                                    <li><a href="contact-us.html">Contact us</a></li>
+                                    <li><a href="">Stores</a></li>
+                                </ul>
+                                <ul class="footer-menu-nav">
+                                    <li><a href="">Legal Notice</a></li>
+                                    <li><a href="">Secure payment</a></li>
+                                    <li><a href="">Sitemap</a></li>
+                                    <li><a href="my-account.html">My Account</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- End Footer Top Area -->
+        <!-- Start Footer Bottom Area -->
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 col-md-6">
+                        <div class="copyright-area">
+                            <p class="copyright-area-text">Copyright © 2020 <a class="copyright-link" href="https://hasthemes.com/">Hasthemes</a></p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <div class="footer-payment">
+                            <a href=""><img class="img-fluid" src="assets/images/icon/payment-icon.png" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- End Footer Bottom Area -->
+    </footer> <!-- ...:::: End Footer Section:::... -->
 
     <!-- material-scrolltop button -->
     <button class="material-scrolltop" type="button"></button>
@@ -217,26 +266,10 @@
     </div> <!-- End Modal Quickview cart -->
 
 
-    <!-- ::::::::::::::All JS Files here :::::::::::::: -->
-    <!-- Global Vendor, plugins JS -->
-    <script src="assets/js/vendor/modernizr-3.11.2.min.js"></script>
-    <script src="assets/js/vendor/jquery-3.5.1.min.js"></script>
-    <script src="assets/js/vendor/jquery-migrate-3.3.0.min.js"></script>
-    <script src="assets/js/vendor/bootstrap.bundle.min.js"></script>
-    <script src="assets/js/vendor/jquery-ui.min.js"></script>
-
-    <!--Plugins JS-->
-    <script src="assets/js/plugins/slick.min.js"></script>
-    <script src="assets/js/plugins/material-scrolltop.js"></script>
-    <script src="assets/js/plugins/jquery.nice-select.min.js"></script>
-    <script src="assets/js/plugins/jquery.zoom.min.js"></script>
-    <script src="assets/js/plugins/venobox.min.js"></script>
-
-    <!-- Use the minified version files listed below for better performance and remove the files listed above -->
-    <!-- <script src="assets/js/vendor.min.js"></script> 
-    <script src="assets/js/plugins.min.js"></script> -->
-
-    <!-- Main JS -->
-    <script src="assets/js/main.js"></script>
-  </body>
-</html>
+    </div>
+</template>
+<script>
+    export default{
+        name: 'Foot'
+    }
+</script>
