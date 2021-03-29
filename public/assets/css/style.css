@@ -13958,6 +13958,19 @@ Components - Products
 /*Product Default CSS*/
 .product-default-single {
   padding: 0 30px 30px 30px;
+  margin: 0 15px 0 15px;
+}
+
+.product-default-slider-custom .slick-slide{
+  margin-right: 15px;
+  margin-left: 15px;
+  margin-bottom: 0px;
+  border: 1px solid green;
+}
+.product-default-slider-custom{
+  border: 1px solid yellow;
+  padding: 0px;
+  display: inline;
 }
 
 .product-default-content {

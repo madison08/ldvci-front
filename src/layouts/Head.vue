@@ -77,12 +77,12 @@
                     <div class="col-3 text-right">
                         <!-- Start Header Action Icon -->
                         <ul class="header-action-icon">
-                            <li>
+                            <!-- <li>
                                 <a href="#offcanvas-wishlish" class="offcanvas-toggle">
                                     <i class="icon-heart"></i>
                                     <span class="header-action-icon-item-count">3</span>
                                 </a>
-                            </li>
+                            </li> -->
                             <li>
                                 <a href="#offcanvas-add-cart" class="offcanvas-toggle">
                                     <i class="icon-shopping-cart"></i>
@@ -295,12 +295,12 @@
                 </div>
                 <!-- Start Header Action Icon -->
                 <ul class="mobile-action-icon">
-                    <li class="mobile-action-icon-item">
+                    <!-- <li class="mobile-action-icon-item">
                         <a href="wishlist.html" class="mobile-action-icon-link">
                             <i class="icon-heart"></i>
                             <span class="mobile-action-icon-item-count">3</span>
                         </a>
-                    </li>
+                    </li> -->
                     <li class="mobile-action-icon-item">
                         <a href="cart.html" class="mobile-action-icon-link">
                             <i class="icon-shopping-cart"></i>
