@@ -5,52 +5,53 @@
         <!-- ...:::: Start Header Section:::... -->
     <header class="header-section d-lg-block d-none">
         <!-- Start Header Top Area -->
-        <div class="header-top">
+        <!-- <div class="header-top">
             <div class="container">
                 <div class="row d-flex justify-content-between align-items-center">
                     <div class="col-6">
                         <div class="header-top--left">
-                            <span>Welcome to our store!</span>
+                            <span>Bienvenue dans notre magasin !</span>
                         </div>
                     </div>
                     <div class="col-6">
-                        <div class="header-top--right">
+                        <div class="header-top--right"> -->
                             <!-- Start Header Top Menu -->
-                            <ul class="header-user-menu">
+                            <!-- <ul class="header-user-menu">
                                 <li class="has-user-dropdown">
-                                    <a href="">Setting</a>
+                                    <a href="">Setting</a> -->
                                     <!-- Header Top Menu's Dropdown -->
-                                    <ul class="user-sub-menu">
+                                    <!-- <ul class="user-sub-menu">
                                         <li><a href="">Checkout</a></li>
                                         <li><a href="">My Account</a></li>
                                         <li><a href="">Shopping Cart</a></li>
                                         <li><a href="">Wishlist</a></li>
                                     </ul>
-                                </li>
-                                <li class="has-user-dropdown">
-                                    <a href="">$ USD</a>
+                                </li> -->
+                                <!-- <li class="has-user-dropdown">
+                                    <a href="">$ USD</a> -->
                                     <!-- Header Top Menu's Dropdown -->
-                                    <ul class="user-sub-menu">
+                                    <!-- <ul class="user-sub-menu">
                                         <li><a href="">EUR – Euro</a></li>
                                         <li><a href="">GBP – British Pound</a></li>
                                         <li><a href="">INR – India Rupee</a></li>
                                     </ul>
-                                </li>
-                                <li class="has-user-dropdown">
-                                    <a href="">English</a>
+                                </li> -->
+                                <!-- <li class="has-user-dropdown">
+                                    <a href="">English</a> -->
                                     <!-- Header Top Menu's Dropdown -->
-                                    <ul class="user-sub-menu">
+                                    <!-- <ul class="user-sub-menu">
                                         <li><a href=""><img class="user-sub-menu-in-icon" src="assets/images/icon/lang-en.png" alt=""> English</a></li>
                                         <li><a href=""><img class="user-sub-menu-in-icon" src="assets/images/icon/lang-gr.png" alt=""> Germany</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href=""><i class="icon-repeat"></i> Compare (0)</a></li>
-                            </ul> <!-- End Header Top Menu -->
-                        </div>
+                                    </ul> -->
+                                <!-- </li>
+                                <li><a href=""><i class="icon-repeat"></i> Compare (0)</a></li> -->
+                            <!-- </ul> End Header Top Menu -->
+                        <!-- </div>
                     </div>
                 </div>
             </div>
-        </div> <!-- End Header Top Area -->
+        </div>  -->
+        <!-- End Header Top Area -->
 
         <!-- Start Header Center Area -->
         <div class="header-center">
@@ -67,7 +68,7 @@
                         <div class="header-search">
                             <form action="#" method="post">
                                 <div class="header-search-box default-search-style d-flex">
-                                    <input class="default-search-style-input-box border-around border-right-none" type="search" placeholder="Search entire store here ..." required>
+                                    <input class="default-search-style-input-box border-around border-right-none" type="search" placeholder="Rechercez un produit ici ..." required>
                                     <button class="default-search-style-input-btn" type="submit"><i class="icon-search"></i></button>
                                 </div>
                             </form>
@@ -104,20 +105,20 @@
                             <nav>
                                 <ul>
                                     <li class="has-dropdown">
-                                        <a class="active main-menu-link" href="index.html">Home <i class="fa fa-angle-down"></i></a>
-                                        <!-- Sub Menu -->
+                                        <a class="active main-menu-link" href="index.html">Acceuil <!-- <i class="fa fa-angle-down"></i>--></a>
+                                        <!-- Sub Menu
                                         <ul class="sub-menu">
                                             <li><a href="index.html">Home 1</a></li>
                                             <li><a href="index-2.html">Home 2</a></li>
-                                        </ul>
+                                        </ul> -->
                                     </li>
                                     <li class="has-dropdown has-megaitem">
-                                        <a href="product-details-default.html">Shop <i class="fa fa-angle-down"></i></a>
+                                        <a href="shop-grid-sidebar-left.html">Produits <!--<i class="fa fa-angle-down"></i>--></a>
                                         <!-- Mega Menu -->
-                                        <div class="mega-menu">
-                                            <ul class="mega-menu-inner">
+                                        <!-- <div class="mega-menu">
+                                            <ul class="mega-menu-inner"> -->
                                                 <!-- Mega Menu Sub Link -->
-                                                <li class="mega-menu-item">
+                                                <!-- <li class="mega-menu-item">
                                                     <a href="#" class="mega-menu-item-title">Shop Layouts</a>
                                                     <ul class="mega-menu-sub">
                                                         <li><a href="shop-grid-sidebar-left.html">Grid Left Sidebar</a></li>
@@ -126,9 +127,9 @@
                                                         <li><a href="shop-list-sidebar-left.html">List Left Sidebar</a></li>
                                                         <li><a href="shop-list-sidebar-right.html">List Right Sidebar</a></li>
                                                     </ul>
-                                                </li>
+                                                </li> -->
                                                 <!-- Mega Menu Sub Link -->
-                                                <li class="mega-menu-item">
+                                                <!-- <li class="mega-menu-item">
                                                     <a href="#" class="mega-menu-item-title">Other Pages</a>
                                                     <ul class="mega-menu-sub">
                                                         <li><a href="cart.html">Cart</a></li>
@@ -138,9 +139,9 @@
                                                         <li><a href="login.html">Login</a></li>
                                                         <li><a href="my-account.html">My Account</a></li>
                                                     </ul>
-                                                </li>
+                                                </li> -->
                                                 <!-- Mega Menu Sub Link -->
-                                                <li class="mega-menu-item">
+                                                <!-- <li class="mega-menu-item">
                                                     <a href="#" class="mega-menu-item-title">Product Types</a>
                                                     <ul class="mega-menu-sub">
                                                         <li><a href="product-details-default.html">Product Default</a></li>
@@ -149,9 +150,9 @@
                                                         <li><a href="product-details-group.html">Product Group</a></li>
                                                         <li><a href="product-details-single-slide.html">Product Slider</a></li>
                                                     </ul>
-                                                </li>
+                                                </li> -->
                                                 <!-- Mega Menu Sub Link -->
-                                                <li class="mega-menu-item">
+                                                <!-- <li class="mega-menu-item">
                                                     <a href="#" class="mega-menu-item-title">Product Types</a>
                                                     <ul class="mega-menu-sub">
                                                         <li><a href="product-details-tab-left.html">Product Tab Left</a></li>
@@ -167,20 +168,20 @@
                                                 <a href="" class="menu-banner-link">
                                                     <img class="menu-banner-img" src="assets/images/banner/menu-banner.jpg" alt="">
                                                 </a>
-                                            </div>
-                                        </div>
+                                            </div> -->
+                                        <!-- </div> -->
                                     </li>
-                                    <li class="has-dropdown">
+                                    <!-- <li class="has-dropdown">
                                         <a href="blog-single-sidebar-left.html">Blog <i class="fa fa-angle-down"></i></a>
-                                        <!-- Sub Menu -->
-                                        <ul class="sub-menu">
+                                        Sub Menu -->
+                                        <!-- <ul class="sub-menu">
                                             <li><a href="blog-grid-sidebar-left.html">Blog Grid Sidebar left</a></li>
                                             <li><a href="blog-grid-sidebar-right.html">Blog Grid Sidebar Right</a></li>
                                             <li><a href="blog-full-width.html">Blog Full Width</a></li>
                                             <li><a href="blog-single-sidebar-left.html">Blog Single Sidebar left</a></li>
                                             <li><a href="blog-single-sidebar-right.html">Blog Single Sidebar Right</a></li>
                                         </ul>
-                                    </li>
+                                    </li> --> 
                                     <li class="has-dropdown">
                                         <a href="#">Pages <i class="fa fa-angle-down"></i></a>
                                         <!-- Sub Menu -->
@@ -192,10 +193,10 @@
                                         </ul>
                                     </li>
                                     <li>
-                                        <a href="about-us.html">About Us</a>
+                                        <a href="about-us.html">A propos</a>
                                     </li>
                                     <li>
-                                        <a href="contact-us.html">Contact Us</a>
+                                        <a href="contact-us.html">Contactez-nous</a>
                                     </li>
                                 </ul>
                             </nav>
@@ -241,7 +242,7 @@
         <div class="offcanvas-mobile-menu-wrapper">
             <!-- Start Mobile Menu User Top -->
             <div class="mobile-menu-top">
-                <span>Welcome to our store!</span>
+                <span>Bienvenue dans notre magasin !</span>
                 <!-- Start Header Top Menu -->
                 <ul class="mobile-menu-user-menu">
                     <li><a class="header-user-menu-link" href=""><i class="icon-repeat"></i>Compare (0)</a></li>

@@ -33,7 +33,21 @@
                 </div>
                 <div class="col-lg-8">
                     <!-- ...:::: Start Hero Area Section:::... -->
-                    <div class="hero-area-wrapper hero-slider-dots fix-slider-dots">
+                    <!-- <div class="hero-area-wrapper hero-slider-dots fix-slider-dots"> -->
+                        <slick
+                            ref="slick"
+                            :options="slickOptions"
+                            @afterChange="handleAfterChange"
+                            @beforeChange="handleBeforeChange"
+                            @breakpoint="handleBreakpoint"
+                            @destroy="handleDestroy"
+                            @edge="handleEdge"
+                            @init="handleInit"
+                            @reInit="handleReInit"
+                            @setPosition="handleSetPosition"
+                            @swipe="handleSwipe"
+                            @lazyLoaded="handleLazyLoaded"
+                            @lazyLoadError="handleLazeLoadError">
                         <!-- Start Hero Slider Single -->
                         <div class="hero-area-single">
                             <div class="hero-area-bg-2">
@@ -66,7 +80,14 @@
                                 </div>
                             </div>
                         </div> <!-- End Hero Slider Single -->
-                    </div> <!-- ...:::: End Hero Area Section:::... -->
+                    <!-- </div> ...:::: End Hero Area Section:::... -->
+
+  <!-- <a href="http://placehold.it/2000x1000"><img src="http://placehold.it/2000x1000" alt=""></a>
+  <a href="http://placehold.it/2000x1000"><img src="http://placehold.it/2000x1000" alt=""></a>
+  <a href="http://placehold.it/2000x1000"><img src="http://placehold.it/2000x1000" alt=""></a>
+  <a href="http://placehold.it/2000x1000"><img src="http://placehold.it/2000x1000" alt=""></a>
+  <a href="http://placehold.it/2000x1000"><img src="http://placehold.it/2000x1000" alt=""></a> -->
+</slick>
                 </div>
             </div>
         </div>
@@ -98,6 +119,21 @@
                         <div class="tab-content tab-animate-zoom">
                             <div class="tab-pane show active" id="car_and_drive">
                                 <div class="product-default-slider product-default-slider-4grids-1row">
+                                    <slick
+                            ref="slick"
+                            :options="slickOptionsProductSlides"
+                            @afterChange="handleAfterChange"
+                            @beforeChange="handleBeforeChange"
+                            @breakpoint="handleBreakpoint"
+                            @destroy="handleDestroy"
+                            @edge="handleEdge"
+                            @init="handleInit"
+                            @reInit="handleReInit"
+                            @setPosition="handleSetPosition"
+                            @swipe="handleSwipe"
+                            @lazyLoaded="handleLazyLoaded"
+                            @lazyLoadError="handleLazeLoadError">
+                                    
                                     <!-- Start Product Defautlt Single -->
                                     <div class="product-default-single border-around">
                                         <div class="product-img-warp">
@@ -258,7 +294,9 @@
                                             <span class="product-default-price"><del class="product-default-price-off">$30.12</del> $25.12</span>
                                         </div>
                                     </div> <!-- End Product Defautlt Single -->
+                                    </slick>
                                 </div>
+                                <!-- llllllllll -->
                             </div>
                             <div class="tab-pane" id="motorcycle">
                                 <div class="product-default-slider product-default-slider-4grids-1row">
@@ -1338,28 +1376,72 @@
         </div>
 
 
+        <!-- <slick
+  ref="slick"
+  :options="slickOptions"
+  @afterChange="handleAfterChange"
+  @beforeChange="handleBeforeChange"
+  @breakpoint="handleBreakpoint"
+  @destroy="handleDestroy"
+  @edge="handleEdge"
+  @init="handleInit"
+  @reInit="handleReInit"
+  @setPosition="handleSetPosition"
+  @swipe="handleSwipe"
+  @lazyLoaded="handleLazyLoaded"
+  @lazyLoadError="handleLazeLoadError">
+  <a href="http://placehold.it/2000x1000"><img src="http://placehold.it/2000x1000" alt=""></a>
+  <a href="http://placehold.it/2000x1000"><img src="http://placehold.it/2000x1000" alt=""></a>
+  <a href="http://placehold.it/2000x1000"><img src="http://placehold.it/2000x1000" alt=""></a>
+  <a href="http://placehold.it/2000x1000"><img src="http://placehold.it/2000x1000" alt=""></a>
+  <a href="http://placehold.it/2000x1000"><img src="http://placehold.it/2000x1000" alt=""></a>
+</slick> -->
+
+
     </div> <!-- ...:::: End Blog Feed Section:::... -->
 
     </div>
 </template>
 <script>
-import $ from 'jquery'
+import Slick from 'vue-slick';
+import 'slick-carousel/slick/slick.css';
+// import $ from 'jquery'
     export default{
         name: 'Home',
+        components: {
+            Slick
+        },
+
+        data(){
+            return{
+                slickOptions:{
+                    slidesToShow: 1,
+                    arrows: true,
+                    dots: true
+                },
+                slickOptionsProductSlides:{
+                    slidesToShow: 4
+                }
+            }
+        },
         
         mounted(){
+            console.log('heyy bro')
 
     /******************************
      * Hero Slider - [Single Grid]
      *****************************/
-    $('.hero-area-wrapper').slick({
-        arrows: false,
-        fade: true,
-        dots: true,
-        easing: 'linear',
-        speed: 2000,
-    });
+    // $('.hero-area-wrapper').slick({
+    //     arrows: false,
+    //     fade: true,
+    //     dots: true,
+    //     easing: 'linear',
+    //     speed: 2000,
+    // });
 
         }
     }
 </script>
+<style scoped>
+
+</style>
