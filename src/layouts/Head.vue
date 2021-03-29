@@ -105,7 +105,7 @@
                             <nav>
                                 <ul>
                                     <li class="has-dropdown">
-                                        <a class="active main-menu-link" href="index.html">Acceuil <!-- <i class="fa fa-angle-down"></i>--></a>
+                                        <router-link to="/">Acceuil</router-link>
                                         <!-- Sub Menu
                                         <ul class="sub-menu">
                                             <li><a href="index.html">Home 1</a></li>
@@ -113,7 +113,7 @@
                                         </ul> -->
                                     </li>
                                     <li class="has-dropdown has-megaitem">
-                                        <a href="shop-grid-sidebar-left.html">Produits <!--<i class="fa fa-angle-down"></i>--></a>
+                                        <router-link to="/shop">Produits</router-link>
                                         <!-- Mega Menu -->
                                         <!-- <div class="mega-menu">
                                             <ul class="mega-menu-inner"> -->
@@ -193,10 +193,10 @@
                                         </ul>
                                     </li>
                                     <li>
-                                        <a href="about-us.html">A propos</a>
+                                        <router-link to="/about">A propos</router-link>
                                     </li>
                                     <li>
-                                        <a href="contact-us.html">Contactez-nous</a>
+                                        <router-link to="/contact">Contactez-nous</router-link>
                                     </li>
                                 </ul>
                             </nav>
@@ -592,65 +592,65 @@ import $ from 'jquery'
             });
 
 
-    //          /*****************************
-    // * Off Canvas Function
-    // *****************************/
-    // (function () {
-    //     var $offCanvasToggle = $('.offcanvas-toggle'),
-    //         $offCanvas = $('.offcanvas'),
-    //         $offCanvasOverlay = $('.offcanvas-overlay'),
-    //         $mobileMenuToggle = $('.mobile-menu-toggle');
-    //         $offCanvasToggle.on('click', function (e) {
-    //             e.preventDefault();
-    //             var $this = $(this),
-    //                 $target = $this.attr('href');
-    //             $('body').addClass('offcanvas-open');
-    //             $($target).addClass('offcanvas-open');
-    //             $offCanvasOverlay.fadeIn();
-    //             if ($this.parent().hasClass('mobile-menu-toggle')) {
-    //                 $this.addClass('close');
-    //             }
-    //         });
-    //         $('.offcanvas-close, .offcanvas-overlay').on('click', function (e) {
-    //             e.preventDefault();
-    //             $('body').removeClass('offcanvas-open');
-    //             $offCanvas.removeClass('offcanvas-open');
-    //             $offCanvasOverlay.fadeOut();
-    //             $mobileMenuToggle.find('a').removeClass('close');
-    //         });
-    // })();
+             /*****************************
+    * Off Canvas Function
+    *****************************/
+    (function () {
+        var $offCanvasToggle = $('.offcanvas-toggle'),
+            $offCanvas = $('.offcanvas'),
+            $offCanvasOverlay = $('.offcanvas-overlay'),
+            $mobileMenuToggle = $('.mobile-menu-toggle');
+            $offCanvasToggle.on('click', function (e) {
+                e.preventDefault();
+                var $this = $(this),
+                    $target = $this.attr('href');
+                $('body').addClass('offcanvas-open');
+                $($target).addClass('offcanvas-open');
+                $offCanvasOverlay.fadeIn();
+                if ($this.parent().hasClass('mobile-menu-toggle')) {
+                    $this.addClass('close');
+                }
+            });
+            $('.offcanvas-close, .offcanvas-overlay').on('click', function (e) {
+                e.preventDefault();
+                $('body').removeClass('offcanvas-open');
+                $offCanvas.removeClass('offcanvas-open');
+                $offCanvasOverlay.fadeOut();
+                $mobileMenuToggle.find('a').removeClass('close');
+            });
+    })();
 
 
-    // /**************************
-    //  * Offcanvas: Menu Content
-    //  **************************/
-    // function mobileOffCanvasMenu() {
-    //     var $offCanvasNav = $('.offcanvas-menu'),
-    //         $offCanvasNavSubMenu = $offCanvasNav.find('.mobile-sub-menu');
+    /**************************
+     * Offcanvas: Menu Content
+     **************************/
+    function mobileOffCanvasMenu() {
+        var $offCanvasNav = $('.offcanvas-menu'),
+            $offCanvasNavSubMenu = $offCanvasNav.find('.mobile-sub-menu');
 
-    //     /*Add Toggle Button With Off Canvas Sub Menu*/
-    //     $offCanvasNavSubMenu.parent().prepend('<div class="offcanvas-menu-expand"></div>');
+        /*Add Toggle Button With Off Canvas Sub Menu*/
+        $offCanvasNavSubMenu.parent().prepend('<div class="offcanvas-menu-expand"></div>');
 
-    //     /*Category Sub Menu Toggle*/
-    //     $offCanvasNav.on('click', 'li a, .offcanvas-menu-expand', function (e) {
-    //         var $this = $(this);
-    //         if ($this.attr('href') === '#' || $this.hasClass('offcanvas-menu-expand')) {
-    //             e.preventDefault();
-    //             if ($this.siblings('ul:visible').length) {
-    //                 $this.parent('li').removeClass('active');
-    //                 $this.siblings('ul').slideUp();
-    //                 $this.parent('li').find('li').removeClass('active');
-    //                 $this.parent('li').find('ul:visible').slideUp();
-    //             } else {
-    //                 $this.parent('li').addClass('active');
-    //                 $this.closest('li').siblings('li').removeClass('active').find('li').removeClass('active');
-    //                 $this.closest('li').siblings('li').find('ul:visible').slideUp();
-    //                 $this.siblings('ul').slideDown();
-    //             }
-    //         }
-    //     });
-    // }
-    // mobileOffCanvasMenu();
+        /*Category Sub Menu Toggle*/
+        $offCanvasNav.on('click', 'li a, .offcanvas-menu-expand', function (e) {
+            var $this = $(this);
+            if ($this.attr('href') === '#' || $this.hasClass('offcanvas-menu-expand')) {
+                e.preventDefault();
+                if ($this.siblings('ul:visible').length) {
+                    $this.parent('li').removeClass('active');
+                    $this.siblings('ul').slideUp();
+                    $this.parent('li').find('li').removeClass('active');
+                    $this.parent('li').find('ul:visible').slideUp();
+                } else {
+                    $this.parent('li').addClass('active');
+                    $this.closest('li').siblings('li').removeClass('active').find('li').removeClass('active');
+                    $this.closest('li').siblings('li').find('ul:visible').slideUp();
+                    $this.siblings('ul').slideDown();
+                }
+            }
+        });
+    }
+    mobileOffCanvasMenu();
 
 
     

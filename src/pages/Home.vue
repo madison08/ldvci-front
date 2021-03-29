@@ -34,7 +34,7 @@
                 <div class="col-lg-8">
                     <!-- ...:::: Start Hero Area Section:::... -->
                     <!-- <div class="hero-area-wrapper hero-slider-dots fix-slider-dots"> -->
-                        <slick
+                        <!-- <slick
                             ref="slick"
                             :options="slickOptions"
                             @afterChange="handleAfterChange"
@@ -47,7 +47,10 @@
                             @setPosition="handleSetPosition"
                             @swipe="handleSwipe"
                             @lazyLoaded="handleLazyLoaded"
-                            @lazyLoadError="handleLazeLoadError">
+                            @lazyLoadError="handleLazeLoadError"> -->
+
+                                <VueSlickCarousel :arrows="true" :dots="true">
+
                         <!-- Start Hero Slider Single -->
                         <div class="hero-area-single">
                             <div class="hero-area-bg-2">
@@ -87,7 +90,8 @@
   <a href="http://placehold.it/2000x1000"><img src="http://placehold.it/2000x1000" alt=""></a>
   <a href="http://placehold.it/2000x1000"><img src="http://placehold.it/2000x1000" alt=""></a>
   <a href="http://placehold.it/2000x1000"><img src="http://placehold.it/2000x1000" alt=""></a> -->
-</slick>
+<!-- </slick> -->
+                                </VueSlickCarousel>
                 </div>
             </div>
         </div>
@@ -119,7 +123,7 @@
                         <div class="tab-content tab-animate-zoom">
                             <div class="tab-pane show active" id="car_and_drive">
                                 <div class="product-default-slider product-default-slider-4grids-1row">
-                                    <slick
+                                    <!-- <slick
                             ref="slick"
                             :options="slickOptionsProductSlides"
                             @afterChange="handleAfterChange"
@@ -132,7 +136,7 @@
                             @setPosition="handleSetPosition"
                             @swipe="handleSwipe"
                             @lazyLoaded="handleLazyLoaded"
-                            @lazyLoadError="handleLazeLoadError">
+                            @lazyLoadError="handleLazeLoadError"> -->
                                     
                                     <!-- Start Product Defautlt Single -->
                                     <div class="product-default-single border-around">
@@ -294,7 +298,7 @@
                                             <span class="product-default-price"><del class="product-default-price-off">$30.12</del> $25.12</span>
                                         </div>
                                     </div> <!-- End Product Defautlt Single -->
-                                    </slick>
+                                    <!-- </slick> -->
                                 </div>
                                 <!-- llllllllll -->
                             </div>
@@ -1403,25 +1407,30 @@
     </div>
 </template>
 <script>
-import Slick from 'vue-slick';
-import 'slick-carousel/slick/slick.css';
+// import Slick from 'vue-slick';
+// import 'slick-carousel/slick/slick.css';
+import VueSlickCarousel from 'vue-slick-carousel'
+import 'vue-slick-carousel/dist/vue-slick-carousel.css'
+import 'vue-slick-carousel/dist/vue-slick-carousel-theme.css'
+
 // import $ from 'jquery'
     export default{
         name: 'Home',
         components: {
-            Slick
+            // Slick,
+            VueSlickCarousel
         },
 
         data(){
             return{
-                slickOptions:{
-                    slidesToShow: 1,
-                    arrows: true,
-                    dots: true
-                },
-                slickOptionsProductSlides:{
-                    slidesToShow: 4
-                }
+                // slickOptions:{
+                //     slidesToShow: 1,
+                //     arrows: true,
+                //     dots: true
+                // },
+                // slickOptionsProductSlides:{
+                //     slidesToShow: 4
+                // }
             }
         },
         
