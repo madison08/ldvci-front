@@ -311,8 +311,24 @@
                                 <li><a href="404.html">404 Page</a></li>
                             </ul>
                         </li>
-                        <li><router-link to="/about">A propos</router-link></li>
-                        <li><router-link to="/contact">Contactez-nous</router-link></li>
+                        <li class="has-dropdown">
+                            <router-link to="/colis">Colis</router-link>
+                        </li>
+                        <li class="has-dropdown">
+                            <router-link to="/pharmacie">Pharmacie</router-link>
+                        </li>
+                        <li class="has-dropdown">
+                            <router-link to="/volaille">Volaille</router-link>
+                        </li>
+                        <li class="has-dropdown">
+                            <router-link to="/pressing">Pressing</router-link>
+                        </li>
+                        <!-- <li class="has-dropdown">
+                            <router-link to="/about">A propos</router-link>
+                        </li> -->
+                        <li>
+                            <router-link to="/contact">Contact</router-link>
+                        </li>
                     </ul>
                 </div> <!-- End Mobile Menu Nav -->
 
