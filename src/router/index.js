@@ -9,6 +9,7 @@ import NotFound from '../pages/NotFound.vue'
 import Colis from '../pages/Colis.vue'
 import Pharmacie from '../pages/Pharmacie.vue'
 import Volaille from '../pages/Volaille.vue'
+import Pressing from '../pages/Pressing.vue'
 
 Vue.use(VueRouter)
 
@@ -52,6 +53,11 @@ const routes = [
     path: '/volaille',
     name: 'Volaille',
     component: Volaille
+  },
+  {
+    path: '/pressing',
+    name: 'Pressing',
+    component: Pressing
   },
   // {
   //   path: '/about',
