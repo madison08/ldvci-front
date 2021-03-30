@@ -14470,7 +14470,7 @@ Components - Form
   border-color: var(--primaryColor);
 }
 .default-form-box textarea {
-  height: 200px;
+  height: 100px;
   padding: 20px;
 }
 
