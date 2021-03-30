@@ -69,7 +69,7 @@
 <style>
     .colis-banner{
         /* width: 10 */
-        height: 100vh;
+        /* height: 100vh; */
         padding-top: 70px;
         padding-bottom: 50px;
         /* background-color: #89898A; */
