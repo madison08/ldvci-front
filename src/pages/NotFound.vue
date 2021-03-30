@@ -54,18 +54,3 @@
         name: 'NotFound'
     }
 </script>
-<style scoped>
-    .notfound{
-        position: absolute;
-        background-color: #fff;
-        top: 0px;
-        bottom: 0px;
-        height: 100vh;
-        width: 100%;
-        z-index: 9999;
-        /* overflow-y: scroll; */
-    }
-    body{
-        overflow: hidden;
-    }
-</style>

@@ -5,11 +5,14 @@ import Shop from '../pages/Shop.vue'
 import Contact from '../pages/Contact.vue'
 import About from '../pages/About.vue'
 import ProductDetail from '../pages/ProductDetail.vue'
-import NotFound from '../pages/NotFound.vue'
+// import NotFound from '../pages/NotFound.vue'
 import Colis from '../pages/Colis.vue'
 import Pharmacie from '../pages/Pharmacie.vue'
 import Volaille from '../pages/Volaille.vue'
 import Pressing from '../pages/Pressing.vue'
+import AlimentProduct from '../pages/AlimentProduct.vue'
+import AlimentVivrier from '../pages/AlimentVivrier'
+import FournitureScolaire from '../pages/FournitureScolaire.vue'
 
 Vue.use(VueRouter)
 
@@ -25,6 +28,21 @@ const routes = [
     component: Shop
   },
   {
+    path: '/aliment_product',
+    name: 'AlimentProduct',
+    component: AlimentProduct
+  },
+  {
+    path: '/aliment_vivrier',
+    name: 'AlimentVivrier',
+    component: AlimentVivrier
+  },
+  {
+    path: '/fourniture_scolaire',
+    name: 'FournitureScolaire',
+    component: FournitureScolaire
+  },
+  {
     path: '/contact',
     name: 'Contact',
     component: Contact
@@ -35,7 +53,7 @@ const routes = [
     component: About
   },
   {
-    path: '/product-single',
+    path: '/product_single',
     name: 'ProductDetail',
     component: ProductDetail
   },
@@ -67,10 +85,11 @@ const routes = [
   //   // which is lazy-loaded when the route is visited.
   //   component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
   // }
+
   {
-    path: "*",
+    path: '*',
     name: 'NotFound',
-    component: NotFound
+    component: () => import(/* webpackChunkName: "about" */ '../pages/NotFound.vue')
   }
 ]
 

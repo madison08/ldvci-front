@@ -20,8 +20,8 @@
                                         <img src="assets/images/icon/support-icon.png" alt="">
                                     </div>
                                     <div class="customer-support-text">
-                                        <span>Customer Support</span>
-                                        <a class="customer-support-text-phone" href="tel:(08)123456789">(08) 123 456 789</a>
+                                        <span>Service client</span>
+                                        <a class="customer-support-text-phone" href="tel:(08)123456789">(+225) 00 00 00 00</a>
                                     </div>
                                 </div>
                             </div>
@@ -29,7 +29,7 @@
                     </div>
                     <div class="col-lg-5 col-md-5 col-sm-7">
                         <div class="footer-widget footer-widget-subscribe">
-                            <h3 class="footer-widget-title">Subscribe newsletter to get updated</h3>
+                            <h3 class="footer-widget-title">Inscrivez vous newsletter , <br> Et ne ratez plus de promotions </h3>
                             <form action="#" method="post">
                                 <div class="footer-subscribe-box default-search-style d-flex">
                                     <input class="default-search-style-input-box border-around border-right-none subscribe-form" type="email" placeholder="Search entire store here ..." required>
@@ -75,11 +75,6 @@
                     <div class="col-lg-6 col-md-6">
                         <div class="copyright-area">
                             <p class="copyright-area-text">Copyright © 2021 <a class="copyright-link" href="https://hasthemes.com/">ldvci</a></p>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-md-6">
-                        <div class="footer-payment">
-                            <a href=""><img class="img-fluid" src="assets/images/icon/payment-icon.png" alt=""></a>
                         </div>
                     </div>
                 </div>

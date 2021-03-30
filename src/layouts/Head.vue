@@ -159,15 +159,14 @@
                                             <li><a href="blog-single-sidebar-right.html">Blog Single Sidebar Right</a></li>
                                         </ul>
                                     </li> --> 
-                                    <li class="has-dropdown">
-                                        <router-link to="/shop">Produits <i class="fa fa-angle-down"></i></router-link>
+                                    <li class="has-dropdown" :class="{'is-active': subIsActive('/')}">
+                                        <router-link to="/shop" >Produits <i class="fa fa-angle-down"></i></router-link>
                                         <!-- <a href="">Services <i class="fa fa-angle-down"></i></a> -->
                                         <!-- Sub Menu -->
                                         <ul class="sub-menu">
-                                            <li><a href="service.html">Produits alimentaire</a></li>
-                                            <li><a href="faq.html">Produits vivrier</a></li>
-                                            <li><a href="privacy-policy.html">Fourniture scolaire</a></li>
-                                            <li><a href="404.html">404 Page</a></li>
+                                            <li><router-link to="/aliment_product">Produits Alimentaire</router-link></li>
+                                            <li><router-link to="/aliment_vivrier">Produits Vivrier</router-link></li>
+                                            <li> <router-link to="/fourniture_scolaire">Fournitures Scolaire</router-link> </li>
                                         </ul>
                                     </li>
                                     <li class="has-dropdown">
@@ -308,7 +307,6 @@
                                 <li><a href="service.html">Service</a></li>
                                 <li><a href="faq.html">Frequently Questions</a></li>
                                 <li><a href="privacy-policy.html">Privacy Policy</a></li>
-                                <li><a href="404.html">404 Page</a></li>
                             </ul>
                         </li>
                         <li class="has-dropdown">
@@ -502,6 +500,15 @@ import $ from 'jquery'
     export default{
         name: 'Head',
 
+        methods: {
+  subIsActive(input) {
+    const paths = Array.isArray(input) ? input : [input]
+    return paths.some(path => {
+      return this.$route.path.indexOf(path) === 0 // current path starts with this path string
+    })
+  }
+},
+
         mounted(){
 
             // var $window = $(window);
@@ -590,8 +597,6 @@ import $ from 'jquery'
         }
 
     }
+    
+    
 </script>
-<style>
-
-
-</style>
