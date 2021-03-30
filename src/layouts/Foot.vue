@@ -11,7 +11,7 @@
                     <div class="col-lg-3 col-md-3 col-sm-5">
                         <div class="footer-widget footer-widget-contact">
                             <div class="footer-logo">
-                                <a href="index.html"><img src="assets/images/logo/logo.png" alt="" class="img-fluid"></a>
+                                <a href="index.html"><img height="75" src="assets/images/logo/logo.png" alt="" class=""></a>
                             </div>
                             <div class="footer-contact">
                                 <p>We are a team of designers and developers that create high quality Magento, Prestashop, Opencart...</p>
@@ -74,7 +74,7 @@
                 <div class="row align-items-center">
                     <div class="col-lg-6 col-md-6">
                         <div class="copyright-area">
-                            <p class="copyright-area-text">Copyright © 2020 <a class="copyright-link" href="https://hasthemes.com/">Hasthemes</a></p>
+                            <p class="copyright-area-text">Copyright © 2021 <a class="copyright-link" href="https://hasthemes.com/">ldvci</a></p>
                         </div>
                     </div>
                     <div class="col-lg-6 col-md-6">
@@ -151,6 +151,8 @@
                             <div class="col-md-6">
                                 <div class="product-details-gallery-area">
                                     <div class="product-large-image modal-product-image-large">
+                                <VueSlickCarousel v-bind="settings">
+
                                         <div class="product-image-large-single">
                                             <img class="img-fluid" src="assets/images/products_images/aments_products_image_1.jpg" alt="">
                                         </div>
@@ -169,8 +171,10 @@
                                         <div class="product-image-large-single">
                                             <img class="img-fluid" src="assets/images/products_images/aments_products_image_6.jpg" alt="">
                                         </div>
+                                </VueSlickCarousel>
                                     </div>
-                                    <div class="product-image-thumb modal-product-image-thumb">
+                                    <!-- <div class="product-image-thumb modal-product-image-thumb">
+                                <VueSlickCarousel v-bind="settings">
                                         <div class="zoom-active product-image-thumb-single">
                                             <img class="img-fluid" src="assets/images/products_images/aments_products_image_1.jpg" alt="">
                                         </div>
@@ -189,7 +193,8 @@
                                         <div class="product-image-thumb-single">
                                             <img class="img-fluid" src="assets/images/products_images/aments_products_image_6.jpg" alt="">
                                         </div>
-                                    </div>
+                                </VueSlickCarousel>
+                                    </div> -->
                                 </div>
                             </div>
                             <div class="col-md-6">
@@ -243,8 +248,8 @@
                                     <!-- Start  Product Details Meta Area-->
                                     <div class="product-details-meta mb-20">
                                         <ul>
-                                            <li><a href=""><i class="icon-heart"></i>Add to wishlist</a></li>
-                                            <li><a href=""><i class="icon-repeat"></i>Compare</a></li>
+                                            <!-- <li><a href=""><i class="icon-heart"></i>Add to wishlist</a></li> -->
+                                            <!-- <li><a href=""><i class="icon-repeat"></i>Compare</a></li> -->
                                             <li><a href="#" data-toggle="modal" data-target="#modalQuickview"><i class="icon-shopping-cart"></i>Add To Cart</a></li>
                                         </ul>
                                     </div> <!-- End  Product Details Meta Area-->
@@ -269,7 +274,15 @@
     </div>
 </template>
 <script>
+    
+import VueSlickCarousel from 'vue-slick-carousel'
+import 'vue-slick-carousel/dist/vue-slick-carousel.css'
+import 'vue-slick-carousel/dist/vue-slick-carousel-theme.css'
     export default{
-        name: 'Foot'
+        name: 'Foot',
+
+        components: {
+            VueSlickCarousel
+        }
     }
 </script>

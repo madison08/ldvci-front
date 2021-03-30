@@ -13958,18 +13958,20 @@ Components - Products
 /*Product Default CSS*/
 .product-default-single {
   padding: 0 30px 30px 30px;
-  margin: 0 15px 0 15px;
+  margin: 0 15px 0 20px;
 }
 
-.product-default-slider-custom .slick-slide{
+.product-default-slider-custom .product-default-single{
   margin-right: 15px;
   margin-left: 15px;
   margin-bottom: 0px;
-  border: 1px solid green;
+  /* border: 1px solid green; */
 }
 .product-default-slider-custom{
   border: 1px solid yellow;
   padding: 0px;
+  margin-left: 15px;
+  margin-right: 15px;
   display: inline;
 }
 
@@ -17031,6 +17033,10 @@ Layout - Header
 .main-menu nav > ul > li > a:hover, .main-menu nav > ul > li > a.router-link-exact-active {
   background: var(--primaryColor);
   color: #FFF;
+}
+
+.offcanvas-menu ul > li > a:hover, .offcanvas-menu ul > li > a.router-link-exact-active {
+  color: var(--primaryColor);
 }
 
 .sub-menu > li > a,

@@ -4,6 +4,11 @@ import Home from '../pages/Home.vue'
 import Shop from '../pages/Shop.vue'
 import Contact from '../pages/Contact.vue'
 import About from '../pages/About.vue'
+import ProductDetail from '../pages/ProductDetail.vue'
+import NotFound from '../pages/NotFound.vue'
+import Colis from '../pages/Colis.vue'
+import Pharmacie from '../pages/Pharmacie.vue'
+import Volaille from '../pages/Volaille.vue'
 
 Vue.use(VueRouter)
 
@@ -15,7 +20,7 @@ const routes = [
   },
   {
     path: '/shop',
-    name: 'Shop',
+    name: 'Shop', 
     component: Shop
   },
   {
@@ -28,6 +33,26 @@ const routes = [
     name: 'About',
     component: About
   },
+  {
+    path: '/product-single',
+    name: 'ProductDetail',
+    component: ProductDetail
+  },
+  {
+    path: '/colis',
+    name: 'Colis',
+    component: Colis
+  },
+  {
+    path: '/pharmacie',
+    name: 'Pharmacie',
+    component: Pharmacie
+  },
+  {
+    path: '/volaille',
+    name: 'Volaille',
+    component: Volaille
+  },
   // {
   //   path: '/about',
   //   name: 'About',
@@ -36,6 +61,11 @@ const routes = [
   //   // which is lazy-loaded when the route is visited.
   //   component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
   // }
+  {
+    path: "*",
+    name: 'NotFound',
+    component: NotFound
+  }
 ]
 
 const router = new VueRouter({
