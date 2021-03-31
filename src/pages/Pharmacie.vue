@@ -1,32 +1,9 @@
 <template>
     <div>
 
-         <!-- ...:::: Start Breadcrumb Section:::... -->
-    <div class="breadcrumb-section">
-        <div class="breadcrumb-wrapper">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12 d-flex justify-content-between justify-content-md-between  align-items-center flex-md-row flex-column">
-                        <h3 class="breadcrumb-title">Pharmacie</h3>
-                        <div class="breadcrumb-nav">
-                            <nav aria-label="breadcrumb">
-                                <ul>
-                                    <!-- <li><a href="index.html">Home</a></li> -->
-                                    <li><router-link to="/">Acceuil</router-link></li>
-                                    <li class="active" aria-current="page">Pharmacie</li>
-                                </ul>
-                            </nav>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div> <!-- ...:::: End Breadcrumb Section:::... -->
+         <div class="pharmacy-banner">
 
-        <div class="container">
-            pharmacie pages
-
-        </div>
+         </div>
 
     </div>
 </template>
@@ -35,3 +12,10 @@
         name: 'Pharmacie'
     }
 </script>
+<style>
+    .pharmacy-banner{
+        background-image: url(../assets/pharmacy.jpg);
+        background-size: cover;
+        height: 100vh;
+    }
+</style>
