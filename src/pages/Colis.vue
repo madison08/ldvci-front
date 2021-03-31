@@ -11,31 +11,69 @@
                     </div>
                         
                     <div class="col-lg-6">
-                        <div class="contact-form" style="opcaity: 0.2;">
+                        <div class="contact-form">
                             <form action="">
                                 <div class="row">
-                                    <div class="col-lg-6">
-                                        <div class="default-form-box mb-15">
-                                            <label for="contact-name">Lieu de reception *</label>
-                                            <select class="form-select selectl_location" aria-label="Default select example">
-                                            <option selected>Commune</option>
-                                            <option value="1">Plateau</option>
-                                            <option value="2">Riviera</option>
-                                            <option value="3">Yopougon</option>
-                                            </select>
+                                    
+                                    <div class="col-lg-12">
+                                        <div class="row">
+                                            <div class="col-lg-6 col-md-6">
+                                                <div class="default-form-box mb-15">
+                                                    <label for="contact-name"> Votre Nom </label>
+                                                    <input type="text" id="contact-name" class="inputColis" placeholder="Ex: Kouadio daniel" required="required">
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6 col-md-6">
+                                                <div class="default-form-box mb-15">
+                                                    <label for="contact-name"> Votre numero</label>
+                                                    <input type="text" id="contact-name" class="inputColis" placeholder="Ex: +225 00 00 00 00" required="required">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            
+                                            <div class="col-lg-6 col-md-6">
+                                                <div class="default-form-box mb-15">
+                                                    <label for="contact-name">Lieu de reception *</label>
+                                                    <select class="form-select selectl_location" aria-label="Default select example">
+                                                    <option selected>Commune</option>
+                                                    <option value="1">Plateau</option>
+                                                    <option value="2">Riviera</option>
+                                                    <option value="3">Yopougon</option>
+                                                    </select>
+                                                </div>
+                                                </div>
+                                                <div class="col-lg-6 col-md-6">
+                                                    <div class="default-form-box mb-15">
+                                                        <label for="contact-name"> Preciser le quartier * </label>
+                                                        <input type="text" id="contact-name" class="inputColis" placeholder="Ex: Adjame 220 lgts" required="required">
+                                                    </div>
+                                                </div>
                                         </div>
                                     </div>
-                                    <div class="col-lg-6">
-                                        <div class="default-form-box mb-15">
-                                            <label for="contact-name">Lieu de reception *</label>
-                                            <select class="form-select selectl_location" aria-label="Default select example">
-                                            <option selected>Commune</option>
-                                            <option value="1">Plateau</option>
-                                            <option value="2">Riviera</option>
-                                            <option value="3">Yopougon</option>
-                                            </select>
+                                    
+                                    <div class="col-lg-12">
+                                        <div class="row">
+                                            <div class="col-lg-6 col-md-6">
+                                            <div class="default-form-box mb-15">
+                                                <label for="contact-name">Lieu de reception *</label>
+                                                <select class="form-select selectl_location" aria-label="Default select example">
+                                                <option selected>Commune</option>
+                                                <option value="1">Plateau</option>
+                                                <option value="2">Riviera</option>
+                                                <option value="3">Yopougon</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6">
+                                            <div class="default-form-box mb-15">
+                                                <label for="contact-name"> Preciser le quartier * </label>
+                                                <input type="text" id="contact-name" class="inputColis" placeholder="Ex: Yopougon gabriel gare" required="required">
+                                            </div>
+                                        </div>
                                         </div>
                                     </div>
+                                    
                                     <div class="col-lg-12">
                                         <div class="default-form-box mb-20">
                                             <label for="contact-subject">Tarif de livraison</label>
@@ -44,7 +82,7 @@
                                     <div class="col-lg-12">
                                         <div class="default-form-box mb-20">
                                             <label for="contact-message">Designation de votre colis *</label>
-                                            <textarea id="contact-message" cols="5" rows="5"></textarea>
+                                            <textarea id="contact-message" class="inputColis" cols="5" rows="5"></textarea>
                                         </div>
                                     </div>
                                     <div class="col-lg-12">
@@ -75,6 +113,9 @@
         /* background-color: #89898A; */
         background-image: url(../assets/delivery.jpg);
         background-size: cover;
+    }
+    .inputColis{
+        background-color: #fff!important;
     }
     .colis-banner h1{
         color: #fff;
