@@ -13,6 +13,7 @@ import Pressing from '../pages/Pressing.vue'
 import AlimentProduct from '../pages/AlimentProduct.vue'
 import AlimentVivrier from '../pages/AlimentVivrier'
 import FournitureScolaire from '../pages/FournitureScolaire.vue'
+import PharmacyScreenO from '../pages/PharmacyScreenO.vue'
 
 Vue.use(VueRouter)
 
@@ -66,6 +67,11 @@ const routes = [
     path: '/pharmacie',
     name: 'Pharmacie',
     component: Pharmacie
+  },
+  {
+    path: '/pharmacie_screen',
+    name: 'PharmacyScreenO',
+    component: PharmacyScreenO
   },
   {
     path: '/volaille',

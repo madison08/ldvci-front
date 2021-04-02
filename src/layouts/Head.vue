@@ -500,7 +500,16 @@ import $ from 'jquery'
     export default{
         name: 'Head',
 
+        data(){
+            return{
+                clickEl: true,
+            }
+        },
+
         methods: {
+
+
+
   subIsActive(input) {
     const paths = Array.isArray(input) ? input : [input]
     return paths.some(path => {
@@ -510,6 +519,8 @@ import $ from 'jquery'
 },
 
         mounted(){
+
+            
 
             // var $window = $(window);
     // var $body = $('body');
@@ -554,6 +565,20 @@ import $ from 'jquery'
                 $mobileMenuToggle.find('a').removeClass('close');
             });
     })();
+
+    var linkMobile = $('.offcanvas-menu li a');
+        // var offCanvasTogglelink = $('.offcanvas-toggle'),
+            var offCanvas = $('.offcanvas'),
+            offCanvasOverlay = $('.offcanvas-overlay'),
+            mobileMenuToggle = $('.mobile-menu-toggle');
+    linkMobile.on('click', function(){
+
+        $('body').removeClass('offcanvas-open')
+        offCanvas.removeClass('offcanvas-open');
+                offCanvasOverlay.fadeOut();
+                mobileMenuToggle.find('a').removeClass('close');
+    })
+    // $offCanvas.removeClass('offcanvas-open')
 
 
     /**************************
