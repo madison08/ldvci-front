@@ -245,21 +245,6 @@
             </div> <!-- End Mobile Menu User Top -->
             <!-- Start Mobile Menu User Center -->
             <div class="mobile-menu-center">
-                <form action="#" method="post">
-                    <div class="header-search-box default-search-style d-flex">
-                        <input class="default-search-style-input-box border-around border-right-none" type="search" placeholder="Rechercher un produit ici ..." required>
-                        <button class="default-search-style-input-btn" type="submit"><i class="icon-search"></i></button>
-                    </div>
-                </form>
-                <div class="mobile-menu-customer-support">
-                    <div class="mobile-menu-customer-support-icon">
-                        <img src="assets/images/icon/support-icon.png" alt="">
-                    </div>
-                    <div class="mobile-menu-customer-support-text">
-                        <span>Customer Support</span>
-                        <a class="mobile-menu-customer-support-text-phone" href="tel:(08)123456789">(08) 123 456 789</a>
-                    </div>
-                </div>
                 <!-- Start Header Action Icon -->
                 <ul class="mobile-action-icon">
                     <!-- <li class="mobile-action-icon-item">
@@ -287,27 +272,11 @@
                         <li>
                             <router-link to="/shop">produits</router-link>
                             <ul class="mobile-sub-menu">
-                                <li>
-                                    <a href="#">Shop Layout</a>
-                                    <ul class="mobile-sub-menu">
-                                        <li><a href="shop-grid-sidebar-left.html">Grid Left Sidebar</a></li>
-                                        <li><a href="shop-grid-sidebar-right.html">Grid Right Sidebar</a></li>
-                                        <li><a href="shop-full-width.html">Full Width</a></li>
-                                        <li><a href="shop-list-sidebar-left.html">List Left Sidebar</a></li>
-                                        <li><a href="shop-list-sidebar-right.html">List Right Sidebar</a></li>
-                                    </ul>
-                                </li>
+                                <li><router-link to="/aliment_product">Produits Alimentaire</router-link></li>
+                                <li><router-link to="/aliment_vivrier">Produits Vivrier</router-link></li>
+                                <li> <router-link to="/fourniture_scolaire">Fournitures Scolaire</router-link> </li>
                             </ul>
                             
-                        </li>
-                        <li>
-                            <a href="#"><span>Services</span></a>
-                            <ul class="mobile-sub-menu">
-                                <li><a href="about-us.html">About Us</a></li>
-                                <li><a href="service.html">Service</a></li>
-                                <li><a href="faq.html">Frequently Questions</a></li>
-                                <li><a href="privacy-policy.html">Privacy Policy</a></li>
-                            </ul>
                         </li>
                         <li class="has-dropdown">
                             <router-link to="/colis">Colis</router-link>
