@@ -2,6 +2,10 @@
     <div>
 
         <div class="container">
+          
+          <div class="contain-contain-opt">
+
+
             <h2 class="mt-50 animate__animated animate__bounce">Plusieur choix s'offre a vous</h2>
             <p class="pharmacy-subtitle">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis voluptatibus aut, iste rerum sit, nesciunt porro similique, suscipit magni optio veritatis pariatur dignissimos nam officiis!</p>
 
@@ -12,7 +16,7 @@
             <div class="card opt-1">
                 <div class="content">
                 <h2 class="title">Photographiez votre ordonnance</h2>
-                <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed it, the mountains</p>
+                <p class="copy">Check out all of these gorgeous mountain trips with beautiful views</p>
                 <router-link to="/pharmacie_screen" class="btn">Continuer</router-link>
                 </div>
             </div>
@@ -20,21 +24,24 @@
                 <div class="content">
                 <h2 class="title">Saisissez le nom de son (ou ses) medicaments</h2>
                 <p class="copy">Plan your next beach trip with these fabulous destinations</p>
-                <button class="btn">View Trips</button>
+                <router-link to="/pharmacie_saisir" class="btn">Continuer</router-link>
                 </div>
             </div>
             <div class="card opt-3">
                 <div class="content">
                 <h2 class="title">Photographiez vos medicaments</h2>
                 <p class="copy">It's the desert you've always dreamed of</p>
-                <button class="btn">Book Now</button>
+                <router-link to="/pharmacie_screen_med" class="btn">Continuer</router-link>
                 </div>
             </div>
 
             </div>
 
+          </div>
+
 
         </div>
+
     </div>
 </template>
 <script>
@@ -54,7 +61,7 @@
 
 
 
-.page-content {
+.contain-contain-opt .page-content {
   display: grid;
   grid-gap: 1rem;
   padding: 1rem;
@@ -63,7 +70,7 @@
   font-family: var(--font-sans);
 }
 @media (min-width: 600px) {
-  .page-content {
+  .contain-contain-opt .page-content {
     grid-template-columns: repeat(2, 1fr);
     /* grid-template-rows: 1fr 1fr 1fr; */
     /* border: 1px solid red; */
@@ -73,12 +80,12 @@
   } */
 }
 @media (min-width: 800px) {
-  .page-content {
+  .contain-contain-opt .page-content {
     grid-template-columns: repeat(3, 1fr);
   }
 }
 
-.card {
+.contain-contain-opt .card {
   position: relative;
   display: flex;
   align-items: flex-end;
@@ -91,11 +98,11 @@
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 2px 2px rgba(0, 0, 0, 0.1), 0 4px 4px rgba(0, 0, 0, 0.1), 0 8px 8px rgba(0, 0, 0, 0.1), 0 16px 16px rgba(0, 0, 0, 0.1);
 }
 @media (min-width: 600px) {
-  .card {
+  .contain-contain-opt .card {
     height: 350px;
   }
 }
-.card:before {
+.contain-contain-opt .card:before {
   content: "";
   position: absolute;
   top: 0;
@@ -129,6 +136,7 @@
 }
 .card:nth-child(3):before {
   /* background-image: url(https://images.unsplash.com/photo-1545243424-0ce743321e11?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ); */
+  background-image: url(../assets/medicaments.jpg);
 }
 
 .content {
@@ -141,21 +149,21 @@
   transition: transform var(--d) var(--e);
   z-index: 1;
 }
-.content > * + * {
+/* .content > * + * {
   margin-top: 1rem;
-}
+} */
 
 .title {
   font-size: 1.3rem;
   font-weight: bold;
-  line-height: 1.2;
+  /* line-height: 1.2; */
 }
 
 .copy {
   font-family: var(--font-serif);
   font-size: 1.125rem;
   font-style: italic;
-  line-height: 1.35;
+  /* line-height: 1.35; */
 }
 
 .btn {
@@ -184,7 +192,7 @@
   }
 
   .content {
-    transform: translateY(calc(100% - 4.5rem));
+    transform: translateY(calc(4.5rem));
   }
   .content > *:not(.title) {
     opacity: 0;
