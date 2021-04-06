@@ -17,14 +17,14 @@
                 <div class="content">
                 <h2 class="title">Photographiez votre ordonnance</h2>
                 <p class="copy">Check out all of these gorgeous mountain trips with beautiful views</p>
-                <router-link to="/pharmacie_screen" class="btn">Continuer</router-link>
+                <router-link to="/pharmacie/pharmacie_screen" class="btn">Continuer</router-link>
                 </div>
             </div>
             <div class="card opt-2">
                 <div class="content">
                 <h2 class="title">Saisissez le nom de son (ou ses) medicaments</h2>
                 <p class="copy">Plan your next beach trip with these fabulous destinations</p>
-                <router-link to="/pharmacie_saisir" class="btn">Continuer</router-link>
+                <router-link to="/pharmacie/pharmacie_saisir" class="btn">Continuer</router-link>
                 </div>
             </div>
             <div class="card opt-3">

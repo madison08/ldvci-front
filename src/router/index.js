@@ -19,6 +19,10 @@ Vue.use(VueRouter)
 const routes = [
   {
     path: '/',
+    redirect: '/home'
+  },
+  {
+    path: '/home',
     name: 'Home',
     component: Home
   },
@@ -68,12 +72,12 @@ const routes = [
     component: Pharmacie
   },
   {
-    path: '/pharmacie_screen',
+    path: '/pharmacie/pharmacie_screen',
     name: 'PharmacyScreenO',
     component: () => import('../pages/PharmacyScreenO.vue')
   },
   {
-    path: '/pharmacie_saisir',
+    path: '/pharmacie/pharmacie_saisir',
     name: 'PharmacieSaisir',
     component: () => import('../pages/PharmacieSaisir.vue')
   },

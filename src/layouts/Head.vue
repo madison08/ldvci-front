@@ -105,7 +105,7 @@
                             <nav>
                                 <ul>
                                     <li class="has-dropdown">
-                                        <router-link to="/">Acceuil</router-link>
+                                        <router-link to="/home">Acceuil</router-link>
                                         <!-- Sub Menu
                                         <ul class="sub-menu">
                                             <li><a href="index.html">Home 1</a></li>
@@ -159,7 +159,7 @@
                                             <li><a href="blog-single-sidebar-right.html">Blog Single Sidebar Right</a></li>
                                         </ul>
                                     </li> --> 
-                                    <li class="has-dropdown" :class="{'is-active': subIsActive('/')}">
+                                    <li class="has-dropdown">
                                         <router-link to="/shop" >Produits <i class="fa fa-angle-down"></i></router-link>
                                         <!-- <a href="">Services <i class="fa fa-angle-down"></i></a> -->
                                         <!-- Sub Menu -->
