@@ -37,7 +37,7 @@
                                         </div>
                                         <div class="row">
                                             
-                                            <div class="col-lg-6 col-md-6">
+                                            <div class="col-lg-4 col-md-4">
                                                 <div class="default-form-box mb-15">
                                                     <select class="form-select selectl_location" aria-label="Default select example">
                                                     <option selected>Commune</option>
@@ -47,7 +47,7 @@
                                                     </select>
                                                 </div>
                                                 </div>
-                                                <div class="col-lg-6 col-md-6">
+                                                <div class="col-lg-8 col-md-8">
                                                     <div class="default-form-box mb-15">
                                                         <input type="text" id="contact-name" class="inputColis" placeholder="Quartier" required="required">
                                                     </div>
