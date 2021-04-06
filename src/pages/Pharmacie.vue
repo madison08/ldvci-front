@@ -49,7 +49,7 @@
         name: 'Pharmacie'
     }
 </script>
-<style>
+<style lang="scss">
 :root {
   --d: 700ms;
   --e: cubic-bezier(0.19, 1, 0.22, 1);
@@ -59,9 +59,10 @@
   box-sizing: border-box;
 }
 
+.contain-contain-opt{
 
 
-.contain-contain-opt .page-content {
+.page-content{
   display: grid;
   grid-gap: 1rem;
   padding: 1rem;
@@ -70,7 +71,7 @@
   font-family: var(--font-sans);
 }
 @media (min-width: 600px) {
-  .contain-contain-opt .page-content {
+  .page-content {
     grid-template-columns: repeat(2, 1fr);
     /* grid-template-rows: 1fr 1fr 1fr; */
     /* border: 1px solid red; */
@@ -80,12 +81,12 @@
   } */
 }
 @media (min-width: 800px) {
-  .contain-contain-opt .page-content {
+  .page-content {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
-.contain-contain-opt .card {
+.card {
   position: relative;
   display: flex;
   align-items: flex-end;
@@ -98,11 +99,11 @@
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 2px 2px rgba(0, 0, 0, 0.1), 0 4px 4px rgba(0, 0, 0, 0.1), 0 8px 8px rgba(0, 0, 0, 0.1), 0 16px 16px rgba(0, 0, 0, 0.1);
 }
 @media (min-width: 600px) {
-  .contain-contain-opt .card {
+  .card {
     height: 350px;
   }
 }
-.contain-contain-opt .card:before {
+.card:before {
   content: "";
   position: absolute;
   top: 0;
@@ -235,11 +236,16 @@
 }
 .pharmacy-subtitle{
         width: 70%;
+}
+@media (max-width: 768px) {
+    .pharmacy-subtitle{
+        width: 100%;
     }
-    @media (max-width: 768px) {
-        .pharmacy-subtitle{
-            width: 100%;
-        }
-    }
+}
+
+}
+
+
+
 
 </style>
