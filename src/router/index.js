@@ -69,11 +69,18 @@ const routes = [
   {
     path: '/pharmacie',
     name: 'Pharmacie',
-    component: Pharmacie
+    component: Pharmacie,
+    // children: [
+    //   {
+    //     path: 'pharmacie_screen',
+    //     name: 'pharmacyscreeno',
+    //     component: () => import('../pages/PharmacyScreenO.vue')
+    //   },
+    // ]
   },
   {
     path: '/pharmacie/pharmacie_screen',
-    name: 'PharmacyScreenO',
+    name: 'pharmacyscreeno',
     component: () => import('../pages/PharmacyScreenO.vue')
   },
   {

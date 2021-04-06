@@ -15,25 +15,25 @@
             <div class="page-content">
             <div class="card opt-1">
                 <div class="content">
-                <h2 class="title">Photographiez votre ordonnance</h2>
-                <p class="copy">Check out all of these gorgeous mountain trips with beautiful views</p>
+                <h2 class="title">Photographiez votre ordonnance ou vos medicaments</h2>
+                <p class="copy">Deposer votre ordonnance ou vos medicaments sur un support et Photographiez les</p>
                 <router-link to="/pharmacie/pharmacie_screen" class="btn">Continuer</router-link>
                 </div>
             </div>
             <div class="card opt-2">
                 <div class="content">
                 <h2 class="title">Saisissez le nom de son (ou ses) medicaments</h2>
-                <p class="copy">Plan your next beach trip with these fabulous destinations</p>
+                <p class="copy">Saisissez les differents medicaments que vous souhaitez dans formulaire</p>
                 <router-link to="/pharmacie/pharmacie_saisir" class="btn">Continuer</router-link>
                 </div>
             </div>
-            <div class="card opt-3">
+            <!-- <div class="card opt-3">
                 <div class="content">
                 <h2 class="title">Photographiez vos medicaments</h2>
                 <p class="copy">It's the desert you've always dreamed of</p>
                 <router-link to="/pharmacie_screen_med" class="btn">Continuer</router-link>
                 </div>
-            </div>
+            </div> -->
 
             </div>
 
@@ -81,7 +81,7 @@
 }
 @media (min-width: 800px) {
   .contain-contain-opt .page-content {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
@@ -133,10 +133,11 @@
 }
 .card:nth-child(2):before {
   /* background-image: url(https://images.unsplash.com/photo-1533903345306-15d1c30952de?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ); */
+  background-image: url(../assets/form.png);
 }
 .card:nth-child(3):before {
   /* background-image: url(https://images.unsplash.com/photo-1545243424-0ce743321e11?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ); */
-  background-image: url(../assets/medicaments.jpg);
+  /* background-image: url(../assets/medicaments.jpg); */
 }
 
 .content {

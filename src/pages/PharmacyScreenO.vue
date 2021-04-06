@@ -7,16 +7,71 @@
 
               <div class="center">
                 <div class="form-input">
-                  <label for="fileIn">Photo de l'ordonnance</label>
+                  <label for="fileIn">Photo de l'ordonnance ou medicaments</label>
                   <input type="file" id="fileIn" accept="image/*" @change="showPreview">
 
                   <div class="preview">
                     <img id="fileIn-prev" src="" alt="">
+                    <div @click="showForm" class="valid">
+                      <div class="btn btn-lg btn-success">
+                        confirmer
+                      </div>
+                    </div>
+
+                    <div class="valid-form">
+                      <form action="">
+                                <div class="row">
+                                    
+                                    <div class="col-lg-12">
+                                        <div class="row">
+                                            <div class="col-lg-6 col-md-6">
+                                                <div class="default-form-box mb-15">
+                                                    <input type="text" id="contact-name" class="inputColis" placeholder="Nom et prenom" required="required">
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6 col-md-6">
+                                                <div class="default-form-box mb-15">
+                                                    <input type="text" id="contact-name" class="inputColis" placeholder="contact" required="required">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            
+                                            <div class="col-lg-6 col-md-6">
+                                                <div class="default-form-box mb-15">
+                                                    <select class="form-select selectl_location" aria-label="Default select example">
+                                                    <option selected>Commune</option>
+                                                    <option value="1">Plateau</option>
+                                                    <option value="2">Riviera</option>
+                                                    <option value="3">Yopougon</option>
+                                                    </select>
+                                                </div>
+                                                </div>
+                                                <div class="col-lg-6 col-md-6">
+                                                    <div class="default-form-box mb-15">
+                                                        <input type="text" id="contact-name" class="inputColis" placeholder="Quartier" required="required">
+                                                    </div>
+                                                </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <button class="contact-submit-btn" type="submit">Envoyez</button>
+                                    </div>
+                                </div>
+                            </form>
+                    </div>
                   </div>
+                </div>
+                <div>
+                  
                 </div>
 
                 
+
+                
               </div>
+
+              
 
             </div>
 
@@ -37,11 +92,21 @@
               var preview = document.getElementById('fileIn-prev');
               preview.src = src;
               preview.style.display = "block";
-              console.log(e)
-            }else{
-              alert('null')
+              // alert('hhhh')
+
+              var validbutton = document.getElementsByClassName('valid');
+              console.log(validbutton)
+              validbutton[0].style.display = "block"; 
             }
+          },
+
+          showForm(){
+            var validbutton = document.getElementsByClassName('valid-form');
+              console.log(validbutton)
+              validbutton[0].style.display = "block"; 
           }
+
+
         },
 
 
@@ -52,6 +117,13 @@
     }
 </script>
 <style lang="css">
+
+.valid,.valid-form{
+  display: none;
+}
+.valid{
+  margin-bottom: 20px;
+}
 
 
 .pharmacy-O-contain .center{
@@ -69,7 +141,7 @@
   border: 2px solid #000;
 }
 
-.form-input input{
+.form-input input#fileIn{
   display: none;
 }
 
