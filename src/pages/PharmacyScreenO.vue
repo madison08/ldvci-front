@@ -13,7 +13,7 @@
                   <div class="preview">
                     <img id="fileIn-prev" src="" alt="">
                     <div @click="showForm" class="valid">
-                      <div class="btn btn-lg btn-success">
+                      <div class="mt-3 btn btn-dark">
                         confirmer
                       </div>
                     </div>
