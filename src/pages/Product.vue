@@ -562,6 +562,6 @@
 </template>
 <script>
     export default{
-        name: 'Shop'
+        name: 'Product'
     }
 </script>

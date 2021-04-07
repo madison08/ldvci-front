@@ -160,13 +160,13 @@
                                         </ul>
                                     </li> --> 
                                     <li class="has-dropdown">
-                                        <router-link to="/shop" >Produits <i class="fa fa-angle-down"></i></router-link>
+                                        <router-link to="/product" >Produits <i class="fa fa-angle-down"></i></router-link>
                                         <!-- <a href="">Services <i class="fa fa-angle-down"></i></a> -->
                                         <!-- Sub Menu -->
                                         <ul class="sub-menu">
-                                            <li><router-link to="/aliment_product">Produits Alimentaire</router-link></li>
-                                            <li><router-link to="/aliment_vivrier">Produits Vivrier</router-link></li>
-                                            <li> <router-link to="/fourniture_scolaire">Fournitures Scolaire</router-link> </li>
+                                            <li><router-link to="/product/aliment_product">Produits Alimentaire</router-link></li>
+                                            <li><router-link to="/product/aliment_vivrier">Produits Vivrier</router-link></li>
+                                            <li> <router-link to="/product/fourniture_scolaire">Fournitures Scolaire</router-link> </li>
                                         </ul>
                                     </li>
                                     <li class="has-dropdown">
@@ -270,7 +270,7 @@
                             <router-link to="/">Acceuil</router-link>
                         </li>
                         <li>
-                            <router-link to="/shop">produits</router-link>
+                            <router-link to="/product">produits</router-link>
                             <ul class="mobile-sub-menu">
                                 <li><router-link to="/aliment_product">Produits Alimentaire</router-link></li>
                                 <li><router-link to="/aliment_vivrier">Produits Vivrier</router-link></li>

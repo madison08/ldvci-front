@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../pages/Home.vue'
-import Shop from '../pages/Shop.vue'
+// import Product from '../pages/Product.vue'
 import Contact from '../pages/Contact.vue'
 import About from '../pages/About.vue'
 import ProductDetail from '../pages/ProductDetail.vue'
@@ -27,22 +27,23 @@ const routes = [
     component: Home
   },
   {
-    path: '/shop',
-    name: 'Shop', 
-    component: Shop
+    path: '/product',
+    redirect: '/product/aliment_product',
+    name: 'Product', 
+    // component: Product
   },
   {
-    path: '/aliment_product',
+    path: '/product/aliment_product',
     name: 'AlimentProduct',
     component: AlimentProduct
   },
   {
-    path: '/aliment_vivrier',
+    path: '/product/aliment_vivrier',
     name: 'AlimentVivrier',
     component: AlimentVivrier
   },
   {
-    path: '/fourniture_scolaire',
+    path: '/product/fourniture_scolaire',
     name: 'FournitureScolaire',
     component: FournitureScolaire
   },
