@@ -12,7 +12,7 @@
                             <nav aria-label="breadcrumb">
                                 <ul>
                                     <!-- <li><a href="index.html">Home</a></li> -->
-                                    <li><router-link to="/">Acceuil</router-link></li>
+                                    <li><router-link to="/">Acceuil <span>{{ username }}</span></router-link></li>
                                     <li class="active" aria-current="page">Produits Alimentaire</li>
                                 </ul>
                             </nav>
@@ -226,7 +226,7 @@
                                         <!-- Start Grid View Product -->
                                         <div class="tab-pane active show sort-layout-single" id="layout-3-grid">
                                             <div class="row">
-                                                <div class="col-xl-4 col-sm-6 col-12">
+                                                <div class="col-xl-4 col-sm-6 col-12" v-for="{result, index} in results" :key="index">
                                                     <!-- Start Product Defautlt Single -->
                                                     <div class="product-default-single border-around">
                                                         <div class="product-img-warp">
@@ -243,7 +243,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="product-default-content">
-                                                            <h6 class="product-default-link"><a href="product-details-default.html">New Balance Fresh Foam Kaymin Car Purts</a></h6>
+                                                            <h6 class="product-default-link"><a href="product-details-default.html">{{ result.name }}</a></h6>
                                                             <span class="product-default-price"><del class="product-default-price-off">$30.12</del> $25.12</span>
                                                         </div>
                                                     </div> <!-- End Product Defautlt Single -->
@@ -265,7 +265,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="product-default-content">
-                                                            <h6 class="product-default-link"><a href="product-details-default.html">New Balance Fresh Foam Kaymin Car Purts</a></h6>
+                                                            <h6 class="product-default-link"><a href="product-details-default.html">Newss Balance Fresh Foam Kaymin Car Purts</a></h6>
                                                             <span class="product-default-price"><del class="product-default-price-off">$30.12</del> $25.12</span>
                                                         </div>
                                                     </div> <!-- End Product Defautlt Single -->
@@ -560,7 +560,29 @@
     </div>
 </template>
 <script>
+import axios from 'axios'
     export default{
-        name: 'AlimentProduct'
+        name: 'AlimentProduct',
+
+        data() {
+            return{
+                results: [],
+                username: 'madison'
+            }
+        },
+
+
+        mounted(){
+
+            console.log(this.username)
+
+            axios
+            .get('https://restcountries.eu/rest/v2/all')
+            .then((response) => {
+                this.results = response.data[0];
+                console.log(this.results)
+            })
+
+        }
     }
 </script>

@@ -5,9 +5,13 @@
         <div class="colis-banner">
             
             <div class="container">
+                    <h4 class="colis-text">Avec <span>LDV-CI</span> , Faite vous livrer tous vos colis !</h4>
                 <div class="row">
                     <div class="col-lg-6">
-                        <h1 class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus adipisci commodi.</h1>
+                        <div class="mt-bg">
+
+                        </div>
+                        <!-- <h1 class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus adipisci commodi.</h1> -->
                     </div>
                         
                     <div class="col-lg-6">
@@ -17,7 +21,7 @@
                                     
                                     <div class="col-lg-12">
                                         <div class="row">
-                                            <h4>Information client</h4>
+                                            <h4 class="colis-title-bloc">Information client</h4>
                                             <div class="col-lg-6 col-md-6">
                                                 <div class="default-form-box mb-15">
                                                     <!-- <label for="contact-name"> Votre Nom </label> -->
@@ -33,7 +37,7 @@
                                         </div>
                                         <div class="col-lg-12">
                                             <div class="row">
-                                                <h4>Information recepteur</h4>
+                                                <h4 class="colis-title-bloc">Information fournisseur</h4>
                                                 <div class="col-lg-6 col-md-6">
                                                     <div class="default-form-box mb-15">
                                                         <!-- <label for="contact-name"> Votre Nom </label> -->
@@ -50,7 +54,7 @@
                                         </div>
                                         <div class="col-lg-12">
                                             <div class="row">
-                                                <h4>Information sur le colis</h4>
+                                                <h4 class="colis-title-bloc">Information sur le colis</h4>
                                                 
                                                 <div class="col-lg-12">
                                                     <div class="default-form-box mb-20">
@@ -86,7 +90,7 @@
                                         <div class="row">
                                             <div class="col-lg-4 col-md-4">
                                             <div class="default-form-box mb-15">
-                                                <label for="contact-name">Lieu de reception *</label>
+                                                <label for="contact-name">Lieu de livraison *</label>
                                                 <select class="form-select selectl_location" aria-label="Default select example">
                                                 <option selected>Commune</option>
                                                 <option value="1">Plateau</option>
@@ -106,7 +110,8 @@
                                     
                                     <div class="col-lg-12">
                                         <div class="default-form-box mb-20">
-                                            <label for="contact-subject">Tarif de livraison</label>
+                                            <label for="contact-subject">Tarif de livraison *</label>
+                                            <span style="color: red;">Ce prix peut etre majoré en fonction du quartier </span>
                                         </div>
                                     </div>
                                     <div class="col-lg-12">
@@ -128,15 +133,48 @@
 
     }
 </script>
-<style>
+<style lang="scss">
     .colis-banner{
         /* width: 10 */
         /* height: 100vh; */
-        padding-top: 70px;
+        padding-top: 90px;
         padding-bottom: 50px;
         /* background-color: #89898A; */
-        background-image: url(../assets/delivery.jpg);
+        /* background-image: url(../assets/colis.jpg); */
+        background-position: left;
+        background-size: contain;
+        background-repeat: no-repeat;
+        /* background-size: cover; */
+    }
+    .mt-bg{
+        background-image: url(../assets/colis.jpg);
         background-size: cover;
+        background-position: center;
+        /* border: 1px solid red; */
+        width: 100%;
+        height: 650px;
+    }
+    .colis-title-bloc{
+        background-color: #a69f9f;
+        color: #fff;
+        display: inline-block!important;
+        font-size: 20px;
+    }
+    .colis-text{
+        width: 70%;
+        margin: 0 auto;
+        position: relative;
+        top: -25px;
+        padding-bottom: 40px;
+        text-align: center;
+        font-style: italic;
+
+        span{
+            color: #EE521F;
+            font-size: 27px;
+            font-weight: bold;
+
+        }
     }
     .inputColis{
         background-color: #fff!important;
